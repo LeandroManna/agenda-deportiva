@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    background: url('../img/bg-arg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif; /* Fuente específica para h1 */
+    color: #fff; /* Cambia el color del texto para que contraste con el fondo */
+}
+
+.container {
+    flex: 1;
+    position: relative;
+    z-index: 3;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* Overlay para oscurecer el fondo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 2;
+}
+
+/* Clase personalizada para el color de las letras de los enlaces */
+.custom-link {
+    color: #eeeeee; /* Cambia esto al color que desees */
+}
+
+.custom-link:hover {
+    color: #bbbbbb; /* Color cuando se pasa el ratón por encima */
+}
+
+.transparent-tab {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con 80% de opacidad */
+    padding: 15px;
+    border-radius: 5px;
+}
+
